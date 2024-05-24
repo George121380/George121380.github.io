@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,11 +13,13 @@
             padding: 0;
             background-color: #f4f4f4;
         }
+
         .container {
             width: 80%;
             margin: auto;
             overflow: hidden;
         }
+
         header {
             background: #333;
             color: #fff;
@@ -24,36 +27,52 @@
             min-height: 70px;
             border-bottom: #77aaff 3px solid;
         }
+
         header a {
             color: #fff;
             text-decoration: none;
             text-transform: uppercase;
             font-size: 16px;
         }
+
         header ul {
             padding: 0;
             list-style: none;
         }
+
         header li {
             float: right;
             display: inline;
             padding: 0 20px 0 20px;
         }
+
         .main {
             padding: 20px;
             background: #fff;
             margin-top: 20px;
         }
+
         .section {
             margin-bottom: 20px;
         }
+
         .section h2 {
             margin-bottom: 10px;
             border-bottom: 2px solid #333;
             padding-bottom: 5px;
         }
+
+        .profile-photo {
+            float: left;
+            margin-right: 20px;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
     </style>
 </head>
+
 <body>
     <header>
         <div class="container">
@@ -69,32 +88,54 @@
     <div class="container">
         <section id="about" class="section main">
             <h2>About Me</h2>
-            <p>Hello! I am Peiqi Liu, a Bachelor student of Intelligent Science and Technology at Peking University, expected to graduate in June 2026. I am passionate about computer science, particularly in the areas of computer vision, natural language processing, and robotic manipulation.</p>
+            <img src="profile.jpg" alt="Peiqi Liu" class="profile-photo">
+            <p>Hello! I am Peiqi Liu, a Bachelor student of Intelligent Science and Technology at Peking University,
+                expected to graduate in June 2026. I am passionate about computer science, particularly in the areas of
+                computer vision, natural language processing, and robotic manipulation.</p>
         </section>
         <section id="education" class="section main">
             <h2>Education</h2>
             <p><strong>Peking University</strong> (Expected June 2026)<br>
-            Bachelor of Intelligent Science and Technology in Computer Science, Beijing, China</p>
-            <p>Relevant Coursework: Computer Vision, Natural Language Processing, Robotic Manipulation, Deep Learning, Linear Algebra, Math Analysis, Probability & Statistics, Data Structures and Algorithms, Introduction to Computer Science</p>
+                Bachelor of Intelligent Science and Technology in Computer Science, Beijing, China</p>
+            <p>Relevant Coursework: Computer Vision, Natural Language Processing, Robotic Manipulation, Deep Learning,
+                Linear Algebra, Math Analysis, Probability & Statistics, Data Structures and Algorithms, Introduction to
+                Computer Science</p>
         </section>
         <section id="projects" class="section main">
             <h2>Projects</h2>
             <h3>Demand Navigation Plus</h3>
             <p><em>Alignment, Navigation | Habitat3.0, GPT-4 API, Scene Graph, Pytorch, HSSD, HM3D | Ongoing</em></p>
-            <p>We propose a benchmark to evaluate the ability of agents to understand human needs with hierarchical preferences and effectively explore scenarios based on those needs. We've created a dataset encompassing basic needs, preferences, and related items. Currently, we're developing an evaluation method rooted in this dataset, with plans to offer a practical implementation.</p>
-            <p>Role and Responsibilities: Jointly responsible with Dr. Wang Hongcheng, I leverage the GPT-4 API and prompt engineering to generate datasets, modify and test the Habitat 3.0 simulator, design and implement a specific model, and oversee model training and evaluation experiments.</p>
+            <p>We propose a benchmark to evaluate the ability of agents to understand human needs with hierarchical
+                preferences and effectively explore scenarios based on those needs. We've created a dataset encompassing
+                basic needs, preferences, and related items. Currently, we're developing an evaluation method rooted in
+                this dataset, with plans to offer a practical implementation.</p>
+            <p>Role and Responsibilities: Jointly responsible with Dr. Wang Hongcheng, I leverage the GPT-4 API and
+                prompt engineering to generate datasets, modify and test the Habitat 3.0 simulator, design and implement
+                a specific model, and oversee model training and evaluation experiments.</p>
             <h3>Demand Behavior</h3>
             <p><em>Alignment | Omnigibson, GPT-4 API | Ongoing</em></p>
-            <p>This project aims to align robot behavior with human values, modeling human values through professional psychological questionnaires and using GPT-4 for data augmentation. We're developing a method to evaluate if an agent’s actions reflect human values, using the OmniGibson simulator and BDDL format for tasks.</p>
-            <p>Role and Responsibilities: As part of a six-person team, I am responsible for modifying and using part of the simulator and contributing ideas during weekly discussions.</p>
+            <p>This project aims to align robot behavior with human values, modeling human values through professional
+                psychological questionnaires and using GPT-4 for data augmentation. We're developing a method to
+                evaluate if an agent’s actions reflect human values, using the OmniGibson simulator and BDDL format for
+                tasks.</p>
+            <p>Role and Responsibilities: As part of a six-person team, I am responsible for modifying and using part of
+                the simulator and contributing ideas during weekly discussions.</p>
             <h3>Dex Grasp in Clutter Scene</h3>
             <p><em>Grasping, Manipulation | Isaac Gym, Bullet, RRT Algorithm, Gradient Field | Ongoing</em></p>
-            <p>Grasping items in cluttered and confined cabinet scenes is a challenging task. We aim to leverage the flexibility advantages of dexterous hands, employing the method of gradient fields to train a model capable of accomplishing this task.</p>
-            <p>Role and Responsibilities: I participated in constructing the scene and designing the data generation strategy, helping to implement the rapid generation of collision-free robotic arm poses as ground truth.</p>
+            <p>Grasping items in cluttered and confined cabinet scenes is a challenging task. We aim to leverage the
+                flexibility advantages of dexterous hands, employing the method of gradient fields to train a model
+                capable of accomplishing this task.</p>
+            <p>Role and Responsibilities: I participated in constructing the scene and designing the data generation
+                strategy, helping to implement the rapid generation of collision-free robotic arm poses as ground truth.
+            </p>
             <h3>Scene-Plan GPT</h3>
             <p><em>LLM Planning, Scene Graph | iGibson, GPT-4 API, DETR, Scene Graph | Suspended</em></p>
-            <p>We proposed a novel approach that integrates a scene-graph memory with LLMs to facilitate spatial reasoning and navigation. The method incorporates RGB and Depth video embeddings into the LLM’s semantic space, enhancing visual and spatial awareness for task planning.</p>
-            <p>Role and Responsibilities: Initially aimed for CVPR 2023, we withdrew our submission due to suboptimal training results. However, I learned a lot from this project, including modifying and utilizing the iGibson simulator, fine-tuning the DETR model, and generating action list data using the GPT-4 API.</p>
+            <p>We proposed a novel approach that integrates a scene-graph memory with LLMs to facilitate spatial
+                reasoning and navigation. The method incorporates RGB and Depth video embeddings into the LLM’s semantic
+                space, enhancing visual and spatial awareness for task planning.</p>
+            <p>Role and Responsibilities: Initially aimed for CVPR 2023, we withdrew our submission due to suboptimal
+                training results. However, I learned a lot from this project, including modifying and utilizing the
+                iGibson simulator, fine-tuning the DETR model, and generating action list data using the GPT-4 API.</p>
         </section>
         <section id="contact" class="section main">
             <h2>Contact</h2>
@@ -104,4 +145,5 @@
         </section>
     </div>
 </body>
+
 </html>
